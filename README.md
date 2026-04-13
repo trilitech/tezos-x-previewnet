@@ -10,8 +10,8 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 
 | Interface | CAIP-2 | Chain ID |
 |-----------|--------|----------|
-| EVM interface | `eip155:<EVM_CHAIN_ID>` | `<EVM_CHAIN_ID>` |
-| Michelson interface | `tezos:<TEZOS_CHAIN_ID>` | `<TEZOS_CHAIN_ID>` |
+| EVM interface | `eip155:128064` | `128064` |
+| Michelson interface | `tezos:NetXY2oPPvjhUxP` | `NetXY2oPPvjhUxP` (TBC) |
 
 ---
 
@@ -44,7 +44,7 @@ Use the faucet to fund your accounts on both interfaces:
 |-------|-------|
 | Network name | Tezos X Previewnet |
 | RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
-| Chain ID | `<EVM_CHAIN_ID>` |
+| Chain ID | `128064` |
 | Currency symbol | `XTZ` |
 | Block explorer | `https://<PREVIEWNET_BLOCKSCOUT_DOMAIN>` |
 
@@ -53,7 +53,7 @@ Use the faucet to fund your accounts on both interfaces:
 | Field | Value |
 |-------|-------|
 | RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
-| Chain ID | `<TEZOS_CHAIN_ID>` |
+| Chain ID | `NetXY2oPPvjhUxP` (TBC) |
 
 ```bash
 octez-client --endpoint https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink \
