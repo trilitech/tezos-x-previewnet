@@ -2,7 +2,7 @@
 
 Long-running preview network for [Tezos X](https://tezos.com). Runs both the **EVM interface** and the **Michelson interface** on the same rollup, enabling cross-runtime development and testing.
 
-> **Network portal:** `https://<PREVIEWNET_DOMAIN>/`
+> **Network portal:** `https://previewnet.tezosx.nomadic-labs.com/`
 
 ---
 
@@ -19,9 +19,9 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 
 | Service | URL |
 |---------|-----|
-| EVM JSON-RPC | `https://<PREVIEWNET_DOMAIN>/rpc` |
-| Tezos RPC | `https://<PREVIEWNET_DOMAIN>/rpc/tezlink` |
-| Smart Rollup Node | `https://<PREVIEWNET_DOMAIN>/rollup` |
+| EVM JSON-RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
+| Tezos RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
+| Smart Rollup Node | `https://previewnet.tezosx.nomadic-labs.com/rollup` |
 | Blockscout (EVM explorer) | `https://<PREVIEWNET_BLOCKSCOUT_DOMAIN>` |
 | TzKT (Tezos indexer) | `https://<PREVIEWNET_TZKT_DOMAIN>` |
 | Faucet | `https://<PREVIEWNET_FAUCET_DOMAIN>` |
@@ -43,7 +43,7 @@ Use the faucet to fund your accounts on both interfaces:
 | Field | Value |
 |-------|-------|
 | Network name | Tezos X Previewnet |
-| RPC URL | `https://<PREVIEWNET_DOMAIN>/rpc` |
+| RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
 | Chain ID | `<EVM_CHAIN_ID>` |
 | Currency symbol | `XTZ` |
 | Block explorer | `https://<PREVIEWNET_BLOCKSCOUT_DOMAIN>` |
@@ -52,11 +52,11 @@ Use the faucet to fund your accounts on both interfaces:
 
 | Field | Value |
 |-------|-------|
-| RPC URL | `https://<PREVIEWNET_DOMAIN>/rpc/tezlink` |
+| RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
 | Chain ID | `<TEZOS_CHAIN_ID>` |
 
 ```bash
-octez-client --endpoint https://<PREVIEWNET_DOMAIN>/rpc/tezlink \
+octez-client --endpoint https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink \
   config update
 ```
 
@@ -66,10 +66,10 @@ octez-client --endpoint https://<PREVIEWNET_DOMAIN>/rpc/tezlink \
 
 ```bash
 # EVM chain ID
-curl -s -X POST https://<PREVIEWNET_DOMAIN>/rpc \
+curl -s -X POST https://previewnet.tezosx.nomadic-labs.com/rpc \
   -H 'Content-Type: application/json' \
   -d '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}'
 
 # Tezos chain ID
-curl -s https://<PREVIEWNET_DOMAIN>/rpc/tezlink/chains/main/chain_id
+curl -s https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink/chains/main/chain_id
 ```
