@@ -22,9 +22,9 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 | EVM JSON-RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
 | Tezos RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
 | Smart Rollup Node | `https://previewnet.tezosx.nomadic-labs.com/rollup` |
-| Blockscout (EVM explorer) | `https://<PREVIEWNET_BLOCKSCOUT_DOMAIN>` |
-| TzKT (Tezos indexer) | `https://<PREVIEWNET_TZKT_DOMAIN>` |
-| Faucet | `https://<PREVIEWNET_FAUCET_DOMAIN>` |
+| Blockscout (EVM explorer) | `https://blockscout.previewnet.tezosx.nomadic-labs.com` |
+| TzKT (Tezos indexer) | `https://tzkt.previewnet.tezosx.nomadic-labs.com` |
+| Faucet | `https://faucet.previewnet.tezosx.nomadic-labs.com` |
 
 ---
 
@@ -32,7 +32,7 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 
 Use the faucet to fund your accounts on both interfaces:
 
-> **Faucet:** `https://<PREVIEWNET_FAUCET_DOMAIN>`
+> **Faucet:** `https://faucet.previewnet.tezosx.nomadic-labs.com`
 
 ---
 
@@ -46,7 +46,7 @@ Use the faucet to fund your accounts on both interfaces:
 | RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
 | Chain ID | `128064` |
 | Currency symbol | `XTZ` |
-| Block explorer | `https://<PREVIEWNET_BLOCKSCOUT_DOMAIN>` |
+| Block explorer | `https://blockscout.previewnet.tezosx.nomadic-labs.com` |
 
 ### Temple / octez-client (Michelson interface)
 
