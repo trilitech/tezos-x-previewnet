@@ -20,7 +20,9 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 | Service | URL |
 |---------|-----|
 | EVM JSON-RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
-| Tezos RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
+| EVM JSON-RPC (alias) | `https://evm.previewnet.tezosx.nomadic-labs.com` |
+| Tezos RPC (Michelson interface) | `https://previewnet.tezosx.nomadic-labs.com/rpc/michelson` |
+| Tezos RPC (Michelson interface, alias) | `https://michelson.previewnet.tezosx.nomadic-labs.com` |
 | Smart Rollup Node | `https://previewnet.tezosx.nomadic-labs.com/rollup` |
 | Blockscout (EVM explorer) | `https://blockscout.previewnet.tezosx.nomadic-labs.com` |
 | TzKT (Tezos indexer) | `https://tzkt.previewnet.tezosx.nomadic-labs.com` |
@@ -43,7 +45,7 @@ Use the faucet to fund your accounts on both interfaces:
 | Field | Value |
 |-------|-------|
 | Network name | Tezos X Previewnet |
-| RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
+| RPC URL | `https://evm.previewnet.tezosx.nomadic-labs.com` |
 | Chain ID | `128064` |
 | Currency symbol | `XTZ` |
 | Block explorer | `https://blockscout.previewnet.tezosx.nomadic-labs.com` |
@@ -52,11 +54,11 @@ Use the faucet to fund your accounts on both interfaces:
 
 | Field | Value |
 |-------|-------|
-| RPC URL | `https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink` |
+| RPC URL | `https://michelson.previewnet.tezosx.nomadic-labs.com` |
 | Chain ID | `NetXY2oPPzkxUW1` |
 
 ```bash
-octez-client --endpoint https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink \
+octez-client --endpoint https://michelson.previewnet.tezosx.nomadic-labs.com \
   config update
 ```
 
@@ -66,10 +68,10 @@ octez-client --endpoint https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink \
 
 ```bash
 # EVM chain ID
-curl -s -X POST https://previewnet.tezosx.nomadic-labs.com/rpc \
+curl -s -X POST https://evm.previewnet.tezosx.nomadic-labs.com \
   -H 'Content-Type: application/json' \
   -d '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}'
 
 # Tezos chain ID
-curl -s https://previewnet.tezosx.nomadic-labs.com/rpc/tezlink/chains/main/chain_id
+curl -s https://michelson.previewnet.tezosx.nomadic-labs.com/chains/main/chain_id
 ```
