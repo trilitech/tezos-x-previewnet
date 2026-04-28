@@ -19,10 +19,8 @@ Long-running preview network for [Tezos X](https://tezos.com). Runs both the **E
 
 | Service | URL |
 |---------|-----|
-| EVM JSON-RPC | `https://previewnet.tezosx.nomadic-labs.com/rpc` |
-| EVM JSON-RPC (alias) | `https://evm.previewnet.tezosx.nomadic-labs.com` |
-| Tezos RPC (Michelson interface) | `https://previewnet.tezosx.nomadic-labs.com/rpc/michelson` |
-| Tezos RPC (Michelson interface, alias) | `https://michelson.previewnet.tezosx.nomadic-labs.com` |
+| EVM JSON-RPC | `https://evm.previewnet.tezosx.nomadic-labs.com` |
+| Tezos RPC (Michelson interface) | `https://michelson.previewnet.tezosx.nomadic-labs.com` |
 | Smart Rollup Node | `https://previewnet.tezosx.nomadic-labs.com/rollup` |
 | Blockscout (EVM explorer) | `https://blockscout.previewnet.tezosx.nomadic-labs.com` |
 | TzKT (Tezos indexer) | `https://tzkt.previewnet.tezosx.nomadic-labs.com` |
