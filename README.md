@@ -75,3 +75,9 @@ curl -s -X POST https://evm.previewnet.tezosx.nomadic-labs.com \
 # Tezos chain ID
 curl -s https://michelson.previewnet.tezosx.nomadic-labs.com/chains/main/chain_id
 ```
+
+## Rollup identifier
+
+```
+sr1TCYofXUuJjmQvZ26XE4YAwXdfetQfZ6rR
+```
