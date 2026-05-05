@@ -61,6 +61,16 @@ octez-client --endpoint https://michelson.previewnet.tezosx.nomadic-labs.com \
 
 ---
 
+## WalletConnect / Reown
+
+Decentralized apps can connect to Tezos X Previewnet via [WalletConnect](https://walletconnect.com/) using the Reown project ID below. The Blockscout explorer's contract Read/Write tabs use this project ID by default.
+
+| Field | Value |
+|-------|-------|
+| Reown / WalletConnect project ID | `d9e485a41c494fde4e23c8cdc06db59c` |
+
+---
+
 ## Quick connectivity check
 
 ```bash
