@@ -35,6 +35,22 @@ Use the faucet to fund your accounts on both interfaces:
 
 ---
 
+## Bridge
+
+Move XTZ between Tezos L1 and the Tezos X Previewnet. Supports both deposit and withdraw flows through a single interface.
+
+> **Bridge:** `https://bridge.previewnet.tezosx.nomadic-labs.com/`
+
+L1 contracts:
+
+| Contract | Address |
+|----------|---------|
+| Bridge | [`KT1DUaf49SNALJRSB8R45TvEtgVi2xZnCh8B`](https://shadownet.tzkt.io/KT1DUaf49SNALJRSB8R45TvEtgVi2xZnCh8B) |
+| Delayed Bridge | [`KT1NVGmkSgJx4nkRSeVpQs8QvYRBZ58kewdS`](https://shadownet.tzkt.io/KT1NVGmkSgJx4nkRSeVpQs8QvYRBZ58kewdS) |
+| Ticketer | [`KT1FcWeWiEC7Ve5JMdZpKyvaFdsJv7n4GFzi`](https://shadownet.tzkt.io/KT1FcWeWiEC7Ve5JMdZpKyvaFdsJv7n4GFzi) |
+
+---
+
 ## Add to your wallet
 
 ### MetaMask (EVM interface)
